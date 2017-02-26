@@ -3,7 +3,7 @@ module Types
     name 'Tree'
     description 'There are many trees in our orchard'
 
-    global_id_field :id
+    field :id, !types.ID
     field :name, !types.String, 'The name of this tree'
   end
 end
