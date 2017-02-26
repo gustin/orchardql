@@ -1,4 +1,4 @@
 class GraphqlController < ApplicationController
-  def create
+  def query
   end
 end

@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  post '/graphql' => 'graphql'
+  post '/graphql' => 'graphql#query'
 end
