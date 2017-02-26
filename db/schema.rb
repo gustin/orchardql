@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 20170226023005) do
   enable_extension "plpgsql"
 
   create_table "trees", force: :cascade do |t|
-    t.string "PlantTrees"
+    t.string "name"
   end
 
 end
