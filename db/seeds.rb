@@ -1,1 +1,1 @@
-Tree.create([{ name: 'Grimes Golden' }, { name: 'Arkansas Black' }])
+Tree.create([{ variety: 'Grimes Golden' }, { variety: 'Arkansas Black' }])

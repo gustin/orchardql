@@ -3,6 +3,12 @@ module Types
     name 'Query'
     description 'The root node of this schema'
 
+    field :allTrees do
+      type types[TreeType]
+      description 'All the trees'
+
+      resolve -> (obj, args, ctx) { Tree.all }
+    end
     field :tree do
       type TreeType
       description 'The tree identified by id'
