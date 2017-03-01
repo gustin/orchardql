@@ -1,7 +1,7 @@
 module Types
   QueryType = GraphQL::ObjectType.define do
-    name 'Query'
-    description 'The root node of this schema'
+    name 'Orchard'
+    description 'The root node of our orchard.'
 
     field :allTrees do
       type types[TreeType]
@@ -9,6 +9,7 @@ module Types
 
       resolve -> (obj, args, ctx) { Tree.all }
     end
+
     field :tree do
       type TreeType
       description 'The tree identified by id'
