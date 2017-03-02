@@ -5,6 +5,5 @@ module Types
 
     field :id, !types.ID
     field :kind, !TreeKindEnum, 'The kind of tree'
-    field :variety, !types.String, 'The variety of this tree'
   end
 end
